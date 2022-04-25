@@ -1,3 +1,5 @@
-exports.doubleArray = function (someArray) {
-    return someArray.map(item => item * 2)
+exports.sumOfArray = function (someArray) {
+    return someArray.reduce((sum, number) => {
+        return sum + number
+    }, 0)
 }
