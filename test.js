@@ -1,6 +1,10 @@
-const { test, expect } = require("@jest/globals")
-const { subtract } = require("./index")
+const { exportAllDeclaration } = require("@babel/types")
+const multiply = require("./index")
 
-test("subtract subtracts two numbers", () => {
-    expect(subtract(8, 4)).toEqual(4)
+test("multiply gives the product of two numbers", () => {
+    expect(functions.multiply(4, 8)).toEqual(32)
+})
+
+test("add gives the sum of two numbers", () => {
+    expect(functions.add(4, 8)).toEqual(12)
 })
